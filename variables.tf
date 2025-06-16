@@ -43,7 +43,6 @@ variable "maintenance_options" {
 variable "availability_zone" {
   description = "AZ to start the instance in"
   type        = string
-  default     = null
 }
 
 variable "capacity_reservation_specification" {
@@ -121,7 +120,6 @@ variable "instance_initiated_shutdown_behavior" {
 variable "instance_type" {
   description = "The type of instance to start"
   type        = string
-  default     = "t3.micro"
 }
 
 variable "instance_tags" {

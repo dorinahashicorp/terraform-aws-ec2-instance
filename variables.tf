@@ -7,7 +7,6 @@ variable "create" {
 variable "name" {
   description = "Name to be used on EC2 instance created"
   type        = string
-  default     = ""
 }
 
 variable "ami_ssm_parameter" {
@@ -43,6 +42,7 @@ variable "maintenance_options" {
 variable "availability_zone" {
   description = "AZ to start the instance in"
   type        = string
+  default     = null
 }
 
 variable "capacity_reservation_specification" {
